@@ -16,7 +16,7 @@ services:
       - /opt/docker-sonarr/config:/config
 
       # Map in your Media Shares & Download Client's Share(s)...
-      - /nas:/nas
+      - /home/erwan/media:/nas
 
     environment:
       - TZ=UTC

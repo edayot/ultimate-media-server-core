@@ -16,7 +16,7 @@ services:
       - /opt/docker-qbittorrent/config:/config
 
       # Map in the volumes where you would like to save your torrent files...
-      - /nas:/nas
+      - /home/erwan/media:/nas
 
     environment:
       - TZ=UTC

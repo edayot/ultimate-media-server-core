@@ -28,11 +28,11 @@ services:
       - ./transcode-tmp:/transcode
 
       # Map in the volume(s) where your media resides below...
-      - /nas:/nas
+      - /home/erwan/media:/nas
       - /nas2:/nas2
 
     environment:
-      - TZ=Australia/Brisbane
+      - TZ=Europe/Paris
       - PLEX_UID=0
       - PLEX_GID=0
 

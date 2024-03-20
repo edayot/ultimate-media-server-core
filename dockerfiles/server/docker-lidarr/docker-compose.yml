@@ -16,7 +16,7 @@ services:
       - /opt/docker-lidarr/config:/config
 
       # Configure any other volmes/shares you want to map in...
-      - /nas:/nas
+      - /home/erwan/media:/nas
 
     environment:
       - TZ=UTC

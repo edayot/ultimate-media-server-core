@@ -15,7 +15,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./config:/config
-      - /nas:/nas
+      - /home/erwan/media:/nas
 
     environment:
       - TZ=UTC

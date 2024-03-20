@@ -22,7 +22,7 @@ services:
       - /opt/docker-radarr/pp-scripts:/opt/pp-scripts
 
       # Map in your Media Shares Below...
-      - /nas:/nas
+      - /home/erwan/media:/nas
 
     environment:
       - TZ=UTC
