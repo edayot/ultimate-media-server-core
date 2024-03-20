@@ -13,7 +13,7 @@ services:
 
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /opt/docker-lidarr/config:/config
+      - /home/erwan/new_opt/docker-lidarr/config:/config
 
       # Configure any other volmes/shares you want to map in...
       - /home/erwan/media:/nas

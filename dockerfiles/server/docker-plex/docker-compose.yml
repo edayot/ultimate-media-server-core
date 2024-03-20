@@ -13,13 +13,13 @@ services:
 
     volumes:
       # Store the config locally...
-      - /opt/docker-plex/config:/config
+      - /home/erwan/new_opt/docker-plex/config:/config
 
       # Map in the volume(s) where your media resides below (you will need to change)...
       - /home/erwan/media:/nas
 
       # Optional directory where you want to store your transcoded files (this should be a SSD)
-      - /opt/docker-plex/transcode-tmp:/transcode
+      - /home/erwan/new_opt/docker-plex/transcode-tmp:/transcode
 
     environment:
       - TZ=Europe/Paris

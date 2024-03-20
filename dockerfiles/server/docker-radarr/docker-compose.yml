@@ -14,12 +14,12 @@ services:
       - 7878:7878
 
     volumes:
-      - /opt/docker-radarr/config:/config
+      - /home/erwan/new_opt/docker-radarr/config:/config
       - /etc/localtime:/etc/localtime:ro
 
       # These are mapped in for post-processing scripts - Remove them if you do not play on any post-processing
       - /var/run/docker.sock:/var/run/docker.sock
-      - /opt/docker-radarr/pp-scripts:/opt/pp-scripts
+      - /home/erwan/new_opt/docker-radarr/pp-scripts:/home/erwan/new_opt/pp-scripts
 
       # Map in your Media Shares Below...
       - /home/erwan/media:/nas

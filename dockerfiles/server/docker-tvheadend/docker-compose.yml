@@ -13,7 +13,7 @@ services:
 
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /opt/docker-tvheadend/config:/config
+      - /home/erwan/new_opt/docker-tvheadend/config:/config
 
     environment:
       - PGID=0

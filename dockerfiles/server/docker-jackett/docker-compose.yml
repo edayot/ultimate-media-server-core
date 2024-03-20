@@ -12,7 +12,7 @@ services:
 
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /opt/docker-jackett/config:/config
+      - /home/erwan/new_opt/docker-jackett/config:/config
 
      # Configure to point to your mapped "blackhole" directory
       - /nzbget-downloads/jackett-blackhole:/downloads

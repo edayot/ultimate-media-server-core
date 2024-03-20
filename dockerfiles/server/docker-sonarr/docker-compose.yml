@@ -13,7 +13,7 @@ services:
 
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /opt/docker-sonarr/config:/config
+      - /home/erwan/new_opt/docker-sonarr/config:/config
 
       # Map in your Media Shares & Download Client's Share(s)...
       - /home/erwan/media:/nas

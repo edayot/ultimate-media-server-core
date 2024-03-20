@@ -13,7 +13,7 @@ services:
       - 18999:18999
 
     volumes:
-      - /opt/docker-qbittorrent/config:/config
+      - /home/erwan/new_opt/docker-qbittorrent/config:/config
 
       # Map in the volumes where you would like to save your torrent files...
       - /home/erwan/media:/nas

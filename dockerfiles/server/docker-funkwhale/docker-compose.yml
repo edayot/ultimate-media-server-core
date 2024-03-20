@@ -31,8 +31,8 @@ services:
     environment:
       - C_FORCE_ROOT=true
     volumes:
-      - "/opt/docker-funkwhale/mediaroot:/srv/funkwhale/data/music:ro"
-      - "/opt/docker-funkwhale/mediaroot:/music:ro"
+      - "/home/erwan/new_opt/docker-funkwhale/mediaroot:/srv/funkwhale/data/music:ro"
+      - "/home/erwan/new_opt/docker-funkwhale/mediaroot:/music:ro"
       - "./data/mediaroot:/srv/funkwhale/data/media"
 
   celerybeat:
@@ -49,10 +49,10 @@ services:
     image: funkwhale/funkwhale:${FUNKWHALE_VERSION:-latest}
     env_file: .env
     volumes:
-      - "/opt/docker-funkwhale/mediaroot:/srv/funkwhale/data/music:ro"
-      - "/opt/docker-funkwhale/mediaroot:/music:ro"
+      - "/home/erwan/new_opt/docker-funkwhale/mediaroot:/srv/funkwhale/data/music:ro"
+      - "/home/erwan/new_opt/docker-funkwhale/mediaroot:/music:ro"
       - "./data/mediaroot:/srv/funkwhale/data/media"
-      - "/opt/docker-funkwhale/data/django-static:${STATIC_ROOT}"
+      - "/home/erwan/new_opt/docker-funkwhale/data/django-static:${STATIC_ROOT}"
       - ./front/dist:/frontend
     ports:
       - "${FUNKWHALE_API_IP:-127.0.0.1}:${FUNKWHALE_API_PORT:-5000}:5000"

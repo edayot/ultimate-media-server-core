@@ -13,7 +13,7 @@ services:
       - 6767:6767
 
     volumes:
-      - /opt/docker-bazarr/config:/config
+      - /home/erwan/new_opt/docker-bazarr/config:/config
       - /etc/localtime:/etc/localtime:ro
 
       # Map in your Media Shares Below...

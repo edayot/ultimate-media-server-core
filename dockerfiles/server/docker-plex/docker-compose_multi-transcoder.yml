@@ -186,12 +186,12 @@ services:
 
     volumes:
       # This directory will need to be created before the service will start - If starting plex for the first time, it may take 30-60 secs while plex bootstraps for the first time...
-      - "./config/Library/Application Support/Plex Media Server/Codecs:/opt/UnicornTranscoder/codecs"
+      - "./config/Library/Application Support/Plex Media Server/Codecs:/home/erwan/new_opt/UnicornTranscoder/codecs"
       - plex-core-files:/usr/lib/plexmediaserver/
 
     command: >
-      bash -c "mkdir -p /opt/UnicornTranscoder/plexmediaserver/$PLEX_BUILD/usr/lib/ &&
-        ln -s /opt/UnicornTranscoder/plexmediaserver/$PLEX_BUILD/usr/lib/plexmediaserver /usr/lib/plexmediaserver"
+      bash -c "mkdir -p /home/erwan/new_opt/UnicornTranscoder/plexmediaserver/$PLEX_BUILD/usr/lib/ &&
+        ln -s /home/erwan/new_opt/UnicornTranscoder/plexmediaserver/$PLEX_BUILD/usr/lib/plexmediaserver /usr/lib/plexmediaserver"
 
 networks:
   pms-core:

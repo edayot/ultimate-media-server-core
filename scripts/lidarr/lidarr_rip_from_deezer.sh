@@ -100,7 +100,7 @@ existsOnDisk() {
 ripAlbum() {
 
     mkdir -p "$DOWNLOAD_DIR"
-    (cd /opt/docker-deezerripper/app ; ./SMLoadr-linux-x64 --path "$DOWNLOAD_DIR" --url "$1")
+    (cd /home/erwan/new_opt/docker-deezerripper/app ; ./SMLoadr-linux-x64 --path "$DOWNLOAD_DIR" --url "$1")
 
     docker exec -i beets bash -c \
         "export BEETSDIR='/config/' && beet -v -l /config/musiclibrary.blb -c /config/skeleton/skeleton-config.yaml import -A -q -i -l /config/import.log $DOWNLOAD_DIR"

@@ -11,7 +11,7 @@ services:
       - 3579:3579
 
     volumes:
-      - /opt/docker-ombi/config:/config
+      - /home/erwan/new_opt/docker-ombi/config:/config
 
     environment:
       - TZ=UTC

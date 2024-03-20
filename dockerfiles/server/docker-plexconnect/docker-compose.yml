@@ -10,7 +10,7 @@ services:
       - 443:443
       - 53:53/udp
     volumes:
-      - /opt/docker-plexconnect/data:/plexconnect
+      - /home/erwan/new_opt/docker-plexconnect/data:/plexconnect
     network_mode: host
     environment:
       # Update to the IP of your PMS Host
